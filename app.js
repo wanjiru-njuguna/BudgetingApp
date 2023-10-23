@@ -18,10 +18,7 @@ jQuery( document ).ready(function( $ ) {
         closeText: "x",
         modal: true,
         /*button:[
-            {  
-                click: get_amount_and_def_from_dialog_box
-                
-            }
+            
         ]*/
     }
     
@@ -75,14 +72,12 @@ function main_buttons_working(btn)
     else if (btn == "addition")
     {
         checking_for_income_and_additions();  
-        // get_values_from_objects_and_their_totals("income_added");
-        // calculate_and_display_balances();
+        
     }
     else if(btn == "subtraction")
     {
         check_for_other_unlisted_expenses();
-        // get_values_from_objects_and_their_totals("Unlisted_expenses");
-        // calculate_and_display_balances();
+        
     }
     else if (btn == 'check-balance-button')
     {
@@ -129,20 +124,7 @@ function focus_cursor_on_inputbox()
     document.getElementById("input-bar").focus();
     
 }
-/*
-function get_amount_from_input_to_the_balance_wheel()
-{
-        let expense_and_amount = {};//an empty object to store amount and the name of the expense.
-        let input_amount = 0;
-        let input_bar = document.getElementById("input-bar");
-        input_amount = input_bar.value;
-        //document.getElementById("balance-wheel").innerText = expense_name + ":" + input_amount;
-        expense_and_amount= {'Expense Name': expense_name, 'Amount':input_amount};
-        return expense_and_amount;
-        
-     
-}
-*/
+
 
 function when_enter_is_pressed_on_input_bar()
 {
@@ -215,21 +197,8 @@ function reset_the_dialog_box()
         description_bar.value ="";
     }
 }
-// function listen_to_okay_click_on_dialog_box()
-// {
-//     let okay_btn = document.getElementById("dialog_okay_btn");
-//     okay_btn.addEventListener('click',when_dialog_ok_btn_clicked);
-//     //storing_income_to_localstorage();
-//     //reset_the_dialog_box();
-// }
-// function listen_to_okay_click_for_adding_expenses()
-// {
-//     let okay_btn = document.getElementById("dialog_okay_btn");
-//     okay_btn.addEventListener('click',when_ok_btn_clicked_to_add_unlisted_expenses);
 
 
-
-// }
 function checking_for_income_and_additions()
 {
     jQuery("#dialog")
@@ -247,14 +216,7 @@ function checking_for_income_and_additions()
             }
         )
         .dialog("open");
-
-    //listen for okay button click
-    //listen_to_okay_click_on_dialog_box();
-    //storing_income_to_localstorage();
-    //reset_the_dialog_box();
-
-
-    
+   
 }
 
 function check_for_other_unlisted_expenses()
@@ -274,12 +236,7 @@ function check_for_other_unlisted_expenses()
         }
     )
     .dialog("open");
-    //listen for okay button to get data
-    //listen_to_okay_click_for_adding_expenses();
-    //storing_unlisted_expenses_to_localstorage();
-    //reset_the_dialog_box();
-
-
+    
 }
 function storing_income_to_localstorage()
 {
@@ -356,32 +313,6 @@ function open_the_data_page()
     window.location.href= "/data.html"
     
 }
-
-//  function get_array_of_objects_from_local_storage(keyname)
-// {
-//     let stringified_object= localStorage.getItem(keyname);
-//     let obtained_object_array = [];
-//     if(stringified_object)
-//     {
-//         obtained_object_array = JSON.parse(stringified_object);
-
-//     }
-    
-//     return obtained_object_array;
-
-// }
-//  function get_values_from_objects_and_their_totals(keyname)
-// {
-//     let object_array = get_array_of_objects_from_local_storage(keyname);
-//     let values_total = 0;
-//     for(let i = 0; i < object_array.length; i++ )
-//     {
-//        let item = object_array[i];
-//         values_total += Number(item["Amount"]);
-//     }
-    
-//     return values_total;
-// }
 
 
 function calculate_and_display_balances()

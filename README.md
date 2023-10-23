@@ -1,6 +1,8 @@
 # WEB BUDGETING APP
 This budgeting app is a web application for tracking expenses. The app stores all the data in the local storage of the user making it possible for the user to retrieve the data.
 
+You can find the app [here](https://wanjiru-njuguna.github.io/BudgetingApp/app.html).
+
 The first web page has all the major expenses that a user could incur, for example, housing, transport, phone, etc. It also has an addition button which allows the user to add any income to the app.
 
 The first page also has a subtraction button that allows the user to add any other expense that is not listed in the main buttons.
