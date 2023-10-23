@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budgetting App2</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="shared.js"></script>
+
+    <script src="app.js"></script>
+
+    
+    
+</head>
+<body>
+    <div class="operations-div">
+        <button id="subtraction" class="subtraction">-</button>
+        <input id="input-bar" value="" type="number" class="input-bar" placeholder="Amount:" maxlength="15" required>
+        <button id="addition" class="addition">+</button>
+    </div>
+
+    <div class="ui-widget" id="dialog" title="Add Income or Expense">
+       
+        <input class= "amount_bar"id="amount_bar" type="number" placeholder="Amount" required maxlength="15">
+        <input class= "description_bar"id="description_bar" type="text" placeholder="Add note" required maxlength="15">
+       <!-- <button id="dialog_okay_btn">Okay</button>-->
+
+      </div>
+    
+    <section id="page">
+        <header>
+            <button id="Transport" class="img-button"><img class="images"src="images/pexels-luis-leon-2569249.jpg" >Transport</button>
+
+            <button id="Phone" class="img-button"><img class="images"src="images/pexels-pixabay-209663.jpg" >Phone</button>
+
+            <button id="Clothes" class="img-button"><img class="images"src="images/pexels-polina-tankilevitch-3735641.jpg" >Clothes</button>
+            <button id="Dining" class="img-button"><img class="images" src="images/pexels-pixabay-269257.jpg">Dining</button>
+            <button id="groceries-image" class="groceries-button"><img class="grocery-images" src="images/pexels-cottonbro-studio-3737612.jpg">Groceries</button>
+            <button id="balance-wheel" class="img-button"></button>    
+            <button id="health-image" class="health-button"><img class="health-image"src="images/pexels-karolina-grabowska-4047148.jpg">Health</button>
+            
+        <div>
+            <button id="Savings" class="img-button"><img class="images" src="images/pexels-maitree-rimthong-1602726.jpg ">Savings</button>
+            <button id="Housing" class="img-button"><img class="images"src="images/pexels-scott-webb-1029599.jpg" >Housing</button>
+            <button id="Gifts" class="img-button"><img class="images"src="images/pexels-jill-wellington-3309878.jpg">Gifts</button>
+            <button id="Drinks" class="img-button"><img class="images"src="images/pexels-isabella-mendes-338713.jpg">Drinks</button>
+        </div>
+        </header>
+            
+       
+    </section>
+
+      <div class="balance-div">
+        <button id="left-burger-button" class="burger-button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi-bi-border-width" viewBox="0 0 16 16"><path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/></svg>
+        </button>
+        <button id="check-balance-button" class="check-balance-button">Balance</button>
+        <button id="right-burger-button" class="burger-button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"class="bi-bi-border-width" viewBox="0 0 16 16"><path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/></svg>
+
+        </button>
+        
+          
+      </div>
+</body>
