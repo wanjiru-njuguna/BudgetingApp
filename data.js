@@ -4,7 +4,6 @@
  let xValues = []; 
  let yValues = [];
 
-
 //pie chart for the data page.
 for(let i = 0; i < percentages.length; i++)
 {
